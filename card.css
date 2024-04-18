@@ -1,0 +1,142 @@
+/* font-family link  */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+/*   font-family: "Poppins", sans-serif; */
+/* font-family: "Kaushan Script", cursive; */
+/* font-family: "Outfit", sans-serif; */
+
+/* reset code  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+/* common color css variable */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --lColor: #fd00fd;
+  --turColor: #00eeff;
+  --kaushanFont: "Kaushan Script", cursive;
+  --popFont: "Poppins", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #ebebeb !important;
+}
+
+/* ================ Card Product Section Start Here ================ */
+
+.card-product-container {
+  box-shadow: 2px 3px 4px #c4c4c4;
+  background-color: #fff;
+  padding: 20px;
+
+  h2 {
+    font-family: var(--popFont);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+}
+.card-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 1.5rem;
+}
+.card-container .product-data {
+  h3 {
+    font-family: var(--popFont);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+  }
+  h5 {
+    font-family: var(--popFont);
+    font-weight: bold;
+    color: #252525;
+  }
+  .best {
+    background-color: tomato;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-size: 1rem;
+  }
+  .instock {
+    color: #017285;
+    margin-top: 0.2rem;
+    font-weight: 500;
+  }
+  p {
+    font-family: var(--popFont);
+    font-size: 15px;
+    font-weight: 400;
+    margin: 3px 0;
+  }
+  .free-return {
+    color: #017285;
+  }
+  .learn {
+    color: #017285;
+  }
+  .style-section {
+    margin: 0.7rem 0;
+    p {
+      font-weight: bold;
+      span {
+        font-weight: normal;
+        margin-left: 1rem;
+      }
+    }
+  }
+  .select-content {
+    display: flex;
+    gap: 10px;
+    p {
+      color: #017285;
+      cursor: pointer;
+    }
+    select {
+      border-radius: 3px;
+      padding: 5px 10px;
+    }
+  }
+}
+.side-card {
+  box-shadow: 2px 3px 4px #c4c4c4;
+  border-radius: 2px;
+  max-width: 250px;
+  max-height: 300px;
+  background-color: var(--white);
+  padding: 1rem;
+  margin-left: 2rem;
+  p {
+    margin-top: 1rem;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  .sub {
+    font-family: var(--popFont);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  button {
+    margin-top: 0.6rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    background-color: #ffd00c;
+    border-radius: 4px;
+  }
+}
+
+/*================= Card Product Section End Here ================== */

@@ -1,0 +1,190 @@
+/* font-family link  */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap");
+/*   font-family: "Poppins", sans-serif; */
+/* font-family: "Kaushan Script", cursive; */
+/* font-family: "Outfit", sans-serif; */
+
+/* reset code  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+/* common color css variable */
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --lColor: #fd00fd;
+  --turColor: #00eeff;
+  --kaushanFont: "Kaushan Script", cursive;
+  --popFont: "Poppins", sans-serif;
+  --outfitFont: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* ============ product details section Start here ================ */
+p {
+  margin-top: 0.6rem !important;
+  font-family: var(--outfitFont);
+  color: rgb(59, 59, 59) 59, 59, 59;
+  cursor: pointer;
+}
+.product-details-container {
+  display: flex;
+  gap: 3rem;
+}
+.product-img {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  img {
+    border: 2px solid #c0c0c0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  img:hover {
+    transform: scale(1.09);
+  }
+}
+.main-product-img {
+  border: 1px solid #f1f1f1;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
+  span {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    color: rgb(86, 86, 86);
+  }
+  img:hover {
+    transform: scale(1.09);
+  }
+}
+.product-description {
+  h4 {
+    font-family: var(--outfitFont);
+    font-size: 1.5rem;
+  }
+  a {
+    color: #007f92;
+    font-size: 15px;
+  }
+  p {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #424242;
+  }
+  .dolor {
+    color: #b73818;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .other {
+    color: #b73818;
+  }
+  .style {
+    font-weight: 600;
+  }
+  .brad-section {
+    p {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    span {
+      font-weight: normal;
+    }
+  }
+  i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+/* .product-parched {
+} */
+.parched-container {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 15px;
+
+  .heading {
+    color: #b73818;
+    p {
+      font-family: sans-serif;
+      font-size: 15px;
+    }
+  }
+  .deliver {
+    color: #007f92;
+    font-size: 14px;
+    i {
+      margin-right: 5px;
+    }
+  }
+  h6 {
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+    color: #296468;
+  }
+  .input-content {
+    button {
+      margin-top: 0.6rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 8px 0;
+      background-color: #f7ca00;
+      border-radius: 5px;
+    }
+  }
+  .source-data {
+    font-size: 14px;
+    span {
+      color: #007f92;
+    }
+  }
+  .mybtn {
+    margin-top: 0.6rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    background-color: #b73818;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+/* ============ product details section End here ================ */
+
+/* ================ Responsive Design Start Here ================*/
+@media only screen and (max-width: 900px) {
+  .product-details-container .main-product-img img {
+    width: 400px !important;
+  }
+  .product-img {
+    display: flex;
+    flex-direction: row;
+  }
+  .product-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-parched .parched-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
